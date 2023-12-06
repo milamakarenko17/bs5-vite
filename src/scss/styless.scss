@@ -1,0 +1,20 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+/* // siin defineerin enda värvieelistused */
+$primary: $indigo;
+$secondary: #F2E911;
+
+// /* Selleks, et need värvid ka kasutusele võetaks, defineerin nad ka $theme-colors masiivis */
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+
+$brand:(
+    "brand": #150f42
+);
+
+$theme-colors: map-merge ($theme-colors, $brand);
